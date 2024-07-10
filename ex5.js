@@ -5,15 +5,15 @@ function calcularAreaEPerimetroCircular(raio){
     const area = pi * raio * raio;
     const perimetro = 2 * pi * raio;
 
-    let arredondadoArea = area.toFixed(2);
-    let arredondadoPerimetro = perimetro.toFixed(2);
+    let arredondadoArea = area.toFixed(3);
+    let arredondadoPerimetro = perimetro.toFixed(3);
 
     alert("Área da sala circular: " + arredondadoArea + " metros quadrados");
     alert("Perímetro (circunferência) da sala circular: " + arredondadoPerimetro + " metros");
 }
 
 let perguntaRaio = parseFloat(prompt("Informe o raio da sala circular: "));
-let raio = perguntaRaio.toFixed(2);
+let raio = perguntaRaio.toFixed(3);
 calcularAreaEPerimetroCircular(raio)
 
   
